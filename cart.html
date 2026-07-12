@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | Opnora Medical</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+TOP BAR
+=========================== -->
+
+<div class="top-bar">
+
+    <div class="top-bar-left">
+
+        <span>
+            <i class="fa-solid fa-truck-fast"></i>
+            Free Delivery Above ?499
+        </span>
+
+        <span>
+            <i class="fa-solid fa-shield-heart"></i>
+            100% Genuine Medicines
+        </span>
+
+    </div>
+
+    <div class="top-bar-right">
+
+        <a href="tel:+919999999999">
+
+            <i class="fa-solid fa-phone"></i>
+
+            +91 99999 99999
+
+        </a>
+
+        <a href="mailto:support@opnora.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            support@opnora.com
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="main-header">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <div class="logo-text">
+
+                <h2>Opnora Medical</h2>
+
+                <p>Your trusted care partner</p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <nav class="navbar">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="medicines.html">Medicines</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-actions">
+
+        <a href="login.html" class="login-btn">
+
+            <i class="fa-regular fa-user"></i>
+
+            Login
+
+        </a>
+
+        <a href="cart.html" class="cart-icon">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span>0</span>
+
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ===========================
+PAGE TITLE
+=========================== -->
+
+<section class="section-title" style="padding-top:70px;">
+
+    <span>Your Shopping Cart</span>
+
+    <h2>Cart Items</h2>
+
+    <p>
+
+        Review your selected medicines before checkout.
+
+    </p>
+
+</section>
+
+<!-- ===========================
+CART ITEMS
+=========================== -->
+
+<section class="featured-products">
+
+    <div class="product-grid" id="cartItems">
+
+        <!-- JavaScript automatically cart items yaha show karega -->
+
+    </div>
+
+</section>
+<!-- ===========================
+ORDER SUMMARY
+=========================== -->
+
+<section class="featured-products">
+
+    <div class="product-card">
+
+        <div class="product-content">
+
+            <h2 style="margin-bottom:20px;">
+                Order Summary
+            </h2>
+
+            <div class="product-meta">
+
+                <span>Subtotal</span>
+
+                <span class="price" id="subTotal">
+                    ?0
+                </span>
+
+            </div>
+
+            <hr style="margin:15px 0;">
+
+            <div class="product-meta">
+
+                <span>Delivery Charges</span>
+
+                <span class="price">
+                    FREE
+                </span>
+
+            </div>
+
+            <hr style="margin:15px 0;">
+
+            <div class="product-meta">
+
+                <strong>Grand Total</strong>
+
+                <strong class="price" id="grandTotal">
+                    ?0
+                </strong>
+
+            </div>
+
+            <br>
+
+            <div class="product-actions">
+
+                <a href="checkout.html"
+                class="shop-btn"
+                style="width:100%;text-align:center;">
+
+                    Proceed To Checkout
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+SHOP MORE
+=========================== -->
+
+<section class="section-btn">
+
+    <a href="medicines.html"
+    class="primary-outline-btn">
+
+        Continue Shopping
+
+    </a>
+
+</section>
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h3>Opnora Medical</h3>
+
+            </div>
+
+            <p>
+
+                Trusted online medical store with genuine medicines,
+                healthcare products and fast delivery.
+
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Customer Area</h4>
+
+            <ul>
+
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Support</h4>
+
+            <ul>
+
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Opnora Medical Store. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ===========================
+FLOATING BUTTONS
+=========================== -->
+
+<a href="https://wa.me/919999999999"
+class="whatsapp-float"
+target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+919999999999"
+class="call-float">
+
+    <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
