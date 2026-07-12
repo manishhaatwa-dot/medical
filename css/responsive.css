@@ -1,0 +1,513 @@
+/* ===========================
+   Opnora Medical Store
+   responsive.css
+=========================== */
+
+/* ===========================
+   LARGE DEVICES
+=========================== */
+@media (max-width: 1200px){
+
+    .hero-left h1{
+        font-size:48px;
+    }
+
+    .hero{
+        gap:30px;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .category-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .footer-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .why-choose-us{
+        gap:30px;
+    }
+}
+
+/* ===========================
+   MEDIUM DEVICES
+=========================== */
+@media (max-width: 992px){
+
+    .top-bar{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .top-bar-left,
+    .top-bar-right{
+        justify-content:center;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .mobile-menu.show{
+        display:block;
+    }
+
+    .main-header{
+        padding:16px 5%;
+    }
+
+    .hero{
+        flex-direction:column;
+        padding:60px 5%;
+        text-align:center;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-left{
+        order:1;
+    }
+
+    .hero-right{
+        order:2;
+    }
+
+    .hero-left h1{
+        font-size:42px;
+    }
+
+    .hero-left p{
+        margin:0 auto 28px;
+    }
+
+    .search-box{
+        margin:0 auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-features{
+        justify-content:center;
+    }
+
+    .mini-card{
+        position:static;
+        margin-top:16px;
+    }
+
+    .hero-image-card{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .trust-bar{
+        grid-template-columns:repeat(2, 1fr);
+        padding:25px 5%;
+    }
+
+    .categories,
+    .featured-products,
+    .why-choose-us{
+        padding:70px 5%;
+    }
+
+    .why-choose-us{
+        flex-direction:column;
+    }
+
+    .why-left,
+    .why-right{
+        width:100%;
+    }
+
+    .info-box{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .promo-cta{
+        margin:0 5% 70px;
+        flex-direction:column;
+        text-align:center;
+        padding:35px 28px;
+    }
+
+    .promo-actions{
+        justify-content:center;
+    }
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+@media (max-width: 768px){
+
+    .top-bar{
+        display:none;
+    }
+
+    .main-header{
+        padding:14px 4%;
+        min-height:78px;
+    }
+
+    .logo-text h2{
+        font-size:20px;
+    }
+
+    .logo-text p{
+        font-size:12px;
+    }
+
+    .logo i{
+        width:46px;
+        height:46px;
+        font-size:20px;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+    .cart-icon{
+        width:44px;
+        height:44px;
+    }
+
+    .menu-toggle{
+        width:44px;
+        height:44px;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:50px 4%;
+    }
+
+    .hero-left h1{
+        font-size:34px;
+        line-height:1.25;
+    }
+
+    .hero-left p{
+        font-size:15px;
+    }
+
+    .hero-tag{
+        font-size:12px;
+        padding:8px 14px;
+    }
+
+    .search-box{
+        max-width:100%;
+        border-radius:18px;
+    }
+
+    .search-box input{
+        padding:15px 16px;
+        font-size:14px;
+    }
+
+    .search-box button{
+        min-width:58px;
+        height:52px;
+    }
+
+    .shop-btn,
+    .call-btn,
+    .primary-outline-btn{
+        width:100%;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .hero-features{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .hero-feature{
+        justify-content:center;
+    }
+
+    .section-title{
+        margin-bottom:36px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .section-title p{
+        font-size:15px;
+    }
+
+    .trust-bar{
+        grid-template-columns:1fr;
+        gap:16px;
+        padding:24px 4%;
+    }
+
+    .offer-banner{
+        padding:14px 4%;
+    }
+
+    .offer-track{
+        gap:14px;
+    }
+
+    .offer-track span{
+        font-size:14px;
+        justify-content:center;
+    }
+
+    .categories,
+    .featured-products,
+    .why-choose-us{
+        padding:60px 4%;
+    }
+
+    .category-container,
+    .product-grid,
+    .info-box,
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .category-card,
+    .product-card,
+    .info-card{
+        border-radius:20px;
+    }
+
+    .product-image{
+        min-height:180px;
+    }
+
+    .why-left h2{
+        font-size:30px;
+    }
+
+    .why-points{
+        grid-template-columns:1fr;
+    }
+
+    .promo-cta{
+        margin:0 4% 60px;
+        border-radius:24px;
+    }
+
+    .promo-content h2{
+        font-size:28px;
+    }
+
+    .promo-content p{
+        font-size:15px;
+    }
+
+    .promo-actions{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .promo-actions .shop-btn,
+    .promo-actions .call-btn{
+        width:100%;
+    }
+
+    .footer{
+        padding-top:60px;
+    }
+
+    .footer-container{
+        padding:0 4% 40px;
+        gap:28px;
+    }
+
+    .footer-bottom{
+        padding:18px 4%;
+    }
+}
+
+/* ===========================
+   MOBILE DEVICES
+=========================== */
+@media (max-width: 576px){
+
+    .main-header{
+        padding:12px 4%;
+    }
+
+    .logo a{
+        gap:10px;
+    }
+
+    .logo-text h2{
+        font-size:18px;
+    }
+
+    .logo-text p{
+        display:none;
+    }
+
+    .hero-left h1{
+        font-size:28px;
+    }
+
+    .hero-left p{
+        font-size:14px;
+    }
+
+    .hero-image-card{
+        padding:14px;
+        border-radius:24px;
+    }
+
+    .mini-card{
+        min-width:100%;
+        padding:12px 14px;
+        border-radius:14px;
+    }
+
+    .mini-card h4{
+        font-size:14px;
+    }
+
+    .mini-card p{
+        font-size:12px;
+    }
+
+    .section-title span,
+    .small-title{
+        font-size:12px;
+        padding:7px 12px;
+    }
+
+    .section-title h2{
+        font-size:26px;
+    }
+
+    .category-card{
+        padding:24px 20px;
+    }
+
+    .category-card .icon{
+        width:64px;
+        height:64px;
+        font-size:26px;
+        border-radius:18px;
+    }
+
+    .category-card h3{
+        font-size:20px;
+    }
+
+    .product-content{
+        padding:20px;
+    }
+
+    .product-content h3{
+        font-size:18px;
+    }
+
+    .product-meta{
+        flex-wrap:wrap;
+        gap:8px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+
+    .view-btn,
+    .add-cart-btn{
+        width:100%;
+    }
+
+    .why-left h2{
+        font-size:26px;
+    }
+
+    .why-point{
+        padding:14px;
+    }
+
+    .info-card{
+        padding:22px 18px;
+    }
+
+    .info-card h3{
+        font-size:24px;
+    }
+
+    .promo-cta{
+        padding:28px 20px;
+    }
+
+    .promo-content h2{
+        font-size:24px;
+    }
+
+    .footer-logo h3{
+        font-size:20px;
+    }
+
+    .social-links{
+        flex-wrap:wrap;
+    }
+
+    .mobile-menu{
+        padding:18px 4%;
+    }
+}
+
+/* ===========================
+   EXTRA SMALL DEVICES
+=========================== */
+@media (max-width: 380px){
+
+    .hero-left h1{
+        font-size:24px;
+    }
+
+    .section-title h2{
+        font-size:23px;
+    }
+
+    .promo-content h2{
+        font-size:21px;
+    }
+
+    .shop-btn,
+    .call-btn,
+    .primary-outline-btn{
+        padding:13px 20px;
+        font-size:14px;
+    }
+
+    .search-box input{
+        font-size:13px;
+    }
+
+    .offer-track span{
+        font-size:13px;
+    }
+}

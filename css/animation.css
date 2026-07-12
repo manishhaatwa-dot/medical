@@ -1,0 +1,533 @@
+/* ===========================
+   Opnora Medical Store
+   animation.css
+=========================== */
+
+/* ===========================
+   KEYFRAMES
+=========================== */
+
+@keyframes fadeDown{
+    0%{
+        opacity:0;
+        transform:translateY(-12px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    0%{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeLeft{
+    0%{
+        opacity:0;
+        transform:translateX(-35px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeRight{
+    0%{
+        opacity:0;
+        transform:translateX(35px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        opacity:0;
+        transform:scale(0.92);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes floatY{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulseGlow{
+    0%{
+        box-shadow:0 0 0 rgba(14, 165, 164, 0.00);
+    }
+    50%{
+        box-shadow:0 12px 28px rgba(14, 165, 164, 0.18);
+    }
+    100%{
+        box-shadow:0 0 0 rgba(14, 165, 164, 0.00);
+    }
+}
+
+@keyframes shine{
+    0%{
+        transform:translateX(-130%) skewX(-20deg);
+    }
+    100%{
+        transform:translateX(130%) skewX(-20deg);
+    }
+}
+
+@keyframes softBounce{
+    0%, 100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-6px);
+    }
+}
+
+@keyframes tickerMove{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(-10px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+/* ===========================
+   GLOBAL ANIMATION HELPERS
+=========================== */
+
+.main-header{
+    animation:fadeDown .6s ease;
+}
+
+.top-bar{
+    animation:fadeDown .5s ease;
+}
+
+.hero-left{
+    animation:fadeLeft .8s ease;
+}
+
+.hero-right{
+    animation:fadeRight .9s ease;
+}
+
+.section-title{
+    animation:fadeUp .8s ease;
+}
+
+.categories .category-card,
+.featured-products .product-card,
+.trust-bar .trust-item,
+.info-card,
+.footer-col{
+    animation:fadeUp .8s ease;
+}
+
+/* ===========================
+   HEADER / NAV
+=========================== */
+
+.logo i{
+    animation:pulseGlow 3.2s infinite ease-in-out;
+    transition:transform .3s ease;
+}
+
+.logo:hover i{
+    transform:rotate(-8deg) scale(1.05);
+}
+
+.navbar ul li a,
+.mobile-menu ul li a{
+    position:relative;
+    overflow:hidden;
+}
+
+.navbar ul li a::before,
+.mobile-menu ul li a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:40px;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.35) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transition:none;
+    pointer-events:none;
+}
+
+.navbar ul li a:hover::before,
+.mobile-menu ul li a:hover::before{
+    animation:shine .8s ease;
+}
+
+.cart-icon{
+    transition:transform .3s ease, background .3s ease, box-shadow .3s ease;
+}
+
+.cart-icon:hover{
+    box-shadow:0 14px 24px rgba(15, 23, 42, 0.18);
+}
+
+.cart-icon span{
+    animation:softBounce 2s infinite ease-in-out;
+}
+
+.menu-toggle{
+    transition:transform .3s ease, background .3s ease;
+}
+
+.menu-toggle:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero-tag{
+    animation:zoomIn .7s ease;
+}
+
+.hero-left h1{
+    animation:fadeLeft .9s ease;
+}
+
+.hero-left p{
+    animation:fadeLeft 1s ease;
+}
+
+.search-box{
+    animation:fadeUp 1s ease;
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.search-box:focus-within{
+    transform:translateY(-2px);
+    box-shadow:0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.search-box button{
+    transition:transform .3s ease, filter .3s ease;
+}
+
+.search-box button:hover{
+    transform:scale(1.02);
+    filter:brightness(1.03);
+}
+
+.shop-btn,
+.call-btn,
+.primary-outline-btn,
+.view-btn,
+.add-cart-btn,
+.login-btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.shop-btn::before,
+.call-btn::before,
+.primary-outline-btn::before,
+.view-btn::before,
+.add-cart-btn::before,
+.login-btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-140%;
+    width:45px;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.35) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    pointer-events:none;
+}
+
+.shop-btn:hover::before,
+.call-btn:hover::before,
+.primary-outline-btn:hover::before,
+.view-btn:hover::before,
+.add-cart-btn:hover::before,
+.login-btn:hover::before{
+    animation:shine .9s ease;
+}
+
+.hero-feature{
+    transition:transform .3s ease, box-shadow .3s ease, background .3s ease;
+    animation:fadeUp 1s ease;
+}
+
+.hero-feature:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.hero-image-card{
+    animation:zoomIn 1s ease;
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.hero-image-card:hover{
+    transform:translateY(-6px);
+}
+
+.hero-image-card img{
+    animation:floatY 4s infinite ease-in-out;
+    transition:transform .4s ease;
+}
+
+.hero-image-card:hover img{
+    transform:scale(1.02);
+}
+
+.mini-card{
+    transition:transform .35s ease, box-shadow .35s ease;
+    animation:fadeUp 1s ease;
+}
+
+.mini-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+.card-one{
+    animation:fadeLeft 1s ease, floatY 4s infinite ease-in-out;
+}
+
+.card-two{
+    animation:fadeRight 1s ease, floatY 4.5s infinite ease-in-out;
+}
+
+/* ===========================
+   TRUST BAR
+=========================== */
+
+.trust-item{
+    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.trust-item:hover i{
+    animation:softBounce .8s ease;
+}
+
+.trust-item:hover h4{
+    color:var(--primary-dark);
+}
+
+/* ===========================
+   OFFER BANNER
+=========================== */
+
+.offer-track{
+    animation:tickerMove 6s infinite ease-in-out;
+}
+
+.offer-track span{
+    transition:transform .3s ease, opacity .3s ease;
+}
+
+.offer-track span:hover{
+    transform:translateY(-2px);
+    opacity:1;
+}
+
+/* ===========================
+   CATEGORY CARDS
+=========================== */
+
+.category-card{
+    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+    transform-origin:center;
+}
+
+.category-card:hover .icon{
+    transform:rotate(-6deg) scale(1.08);
+}
+
+.category-card .icon{
+    transition:transform .35s ease, background .35s ease, color .35s ease;
+}
+
+.category-card h3,
+.category-card p{
+    transition:color .3s ease;
+}
+
+/* ===========================
+   PRODUCT CARDS
+=========================== */
+
+.product-card{
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.07);
+}
+
+.product-image img{
+    transition:transform .4s ease;
+}
+
+.product-badge{
+    animation:zoomIn .6s ease;
+}
+
+.product-actions .view-btn:hover,
+.product-actions .add-cart-btn:hover{
+    box-shadow:0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-point{
+    transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.why-point:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 26px rgba(15, 23, 42, 0.07);
+    border-color:rgba(14, 165, 164, 0.18);
+}
+
+.why-point:hover i{
+    animation:softBounce .8s ease;
+}
+
+.info-card{
+    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.info-card:hover{
+    box-shadow:0 18px 36px rgba(15, 23, 42, 0.10);
+    border-color:rgba(14, 165, 164, 0.18);
+}
+
+.info-card:hover i{
+    transform:scale(1.08) rotate(-6deg);
+}
+
+.info-card i{
+    transition:transform .35s ease;
+}
+
+/* ===========================
+   PROMO CTA
+=========================== */
+
+.promo-cta{
+    animation:fadeUp 1s ease;
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.promo-cta:hover{
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer-col ul li a{
+    position:relative;
+}
+
+.footer-col ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:0;
+    height:1px;
+    background:rgba(255,255,255,0.8);
+    transition:width .3s ease;
+}
+
+.footer-col ul li a:hover::after{
+    width:100%;
+}
+
+.social-links a{
+    transition:transform .35s ease, background .35s ease, box-shadow .35s ease;
+}
+
+.social-links a:hover{
+    box-shadow:0 14px 30px rgba(14, 165, 164, 0.18);
+}
+
+/* ===========================
+   MOBILE MENU ANIMATION
+=========================== */
+
+.mobile-menu{
+    animation:fadeDown .3s ease;
+}
+
+/* ===========================
+   OPTIONAL REVEAL CLASSES
+=========================== */
+
+.reveal-up{
+    animation:fadeUp .8s ease both;
+}
+
+.reveal-left{
+    animation:fadeLeft .8s ease both;
+}
+
+.reveal-right{
+    animation:fadeRight .8s ease both;
+}
+
+.reveal-zoom{
+    animation:zoomIn .8s ease both;
+}
+
+/* ===========================
+   REDUCED MOTION SUPPORT
+=========================== */
+
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation:none !important;
+        transition:none !important;
+        scroll-behavior:auto !important;
+    }
+}
