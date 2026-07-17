@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Opnora Medical</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+TOP BAR
+=========================== -->
+
+<div class="top-bar">
+
+<div class="top-bar-left">
+
+<span>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+Free Delivery Above ?499
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-shield-heart"></i>
+
+100% Genuine Medicines
+
+</span>
+
+</div>
+
+<div class="top-bar-right">
+
+<a href="tel:+919999999999">
+
+<i class="fa-solid fa-phone"></i>
+
++91 99999 99999
+
+</a>
+
+<a href="mailto:support@opnora.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+support@opnora.com
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="main-header">
+
+<div class="logo">
+
+<a href="index.html">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<div class="logo-text">
+
+<h2>Opnora Medical</h2>
+
+<p>Your trusted care partner</p>
+
+</div>
+
+</a>
+
+</div>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="medicines.html">Medicines</a></li>
+
+<li><a href="categories.html">Categories</a></li>
+
+<li><a href="offers.html">Offers</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="checkout.html" class="active">
+
+Checkout
+
+</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-actions">
+
+<a href="login.html" class="login-btn">
+
+<i class="fa-regular fa-user"></i>
+
+Login
+
+</a>
+
+<a href="cart.html" class="cart-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>0</span>
+
+</a>
+
+<button
+id="menuToggle"
+class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ===========================
+PAGE TITLE
+=========================== -->
+
+<section class="section-title"
+style="padding-top:70px;">
+
+<span>
+
+Secure Checkout
+
+</span>
+
+<h2>
+
+Complete Your Order
+
+</h2>
+
+<p>
+
+Enter your delivery details
+and confirm your order.
+
+</p>
+
+</section>
+
+<!-- ===========================
+CHECKOUT
+=========================== -->
+
+<section class="featured-products">
+<div class="product-card">
+
+    <div class="product-content">
+
+        <h2>
+
+            Delivery Information
+
+        </h2>
+
+        <br>
+
+        <form id="checkoutForm">
+
+            <label>Full Name</label>
+
+            <input type="text"
+            placeholder="Enter your full name"
+            style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;">
+
+            <label>Mobile Number</label>
+
+            <input type="tel"
+            placeholder="Enter mobile number"
+            style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;">
+
+            <label>Email Address</label>
+
+            <input type="email"
+            placeholder="Enter email address"
+            style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;">
+
+            <label>Delivery Address</label>
+
+            <textarea
+            placeholder="House No, Street, Area..."
+            rows="4"
+            style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;resize:none;"></textarea>
+
+            <div style="display:flex;gap:20px;flex-wrap:wrap;">
+
+                <div style="flex:1;min-width:220px;">
+
+                    <label>City</label>
+
+                    <input type="text"
+                    placeholder="Enter city"
+                    style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;">
+
+                </div>
+
+                <div style="flex:1;min-width:220px;">
+
+                    <label>Pincode</label>
+
+                    <input type="number"
+                    placeholder="Enter pincode"
+                    style="width:100%;padding:14px;margin:8px 0 18px;border:1px solid #ddd;border-radius:8px;">
+
+                </div>
+
+            </div>
+
+            <label>Order Notes (Optional)</label>
+
+            <textarea
+            placeholder="Any special delivery instructions..."
+            rows="3"
+            style="width:100%;padding:14px;margin:8px 0;border:1px solid #ddd;border-radius:8px;resize:none;"></textarea>
+
+        </form>
+
+    </div>
+
+</div>
+<!-- ===========================
+ORDER SUMMARY
+=========================== -->
+
+<div class="product-card" style="margin-top:30px;">
+
+    <div class="product-content">
+
+        <h2>
+
+            Order Summary
+
+        </h2>
+
+        <br>
+
+        <div class="product-meta">
+
+            <span>Items Total</span>
+
+            <span class="price" id="subTotal">
+
+                ?0
+
+            </span>
+
+        </div>
+
+        <br>
+
+        <div class="product-meta">
+
+            <span>Delivery Charges</span>
+
+            <span style="color:green;">
+
+                FREE
+
+            </span>
+
+        </div>
+
+        <br>
+
+        <div class="product-meta">
+
+            <strong>Grand Total</strong>
+
+            <strong class="price"
+            id="grandTotal">
+
+                ?0
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+PAYMENT METHOD
+=========================== -->
+
+<div class="product-card" style="margin-top:30px;">
+
+    <div class="product-content">
+
+        <h2>
+
+            Payment Method
+
+        </h2>
+
+        <br>
+
+        <label>
+
+            <input type="radio"
+            name="payment"
+            checked>
+
+            Cash On Delivery (COD)
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="radio"
+            name="payment">
+
+            UPI Payment
+            <small>(Coming Soon)</small>
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="radio"
+            name="payment">
+
+            Credit / Debit Card
+            <small>(Coming Soon)</small>
+
+        </label>
+
+    </div>
+
+</div>
+<!-- ===========================
+PLACE ORDER
+=========================== -->
+
+<div class="product-card" style="margin-top:30px;">
+
+    <div class="product-content">
+
+        <label>
+
+            <input type="checkbox" required>
+
+            I agree to the Terms & Conditions and Privacy Policy.
+
+        </label>
+
+        <br><br>
+
+        <button
+        class="shop-btn"
+        style="width:100%;">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            Place Order
+
+        </button>
+
+        <br><br>
+
+        <a href="cart.html"
+        class="primary-outline-btn"
+        style="display:block;text-align:center;">
+
+            ? Back To Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+SECURE CHECKOUT
+=========================== -->
+
+<section class="trust-bar">
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-lock"></i>
+
+        <h4>Secure Checkout</h4>
+
+        <p>Your information is protected.</p>
+
+    </div>
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+        <h4>Fast Delivery</h4>
+
+        <p>Quick delivery at your doorstep.</p>
+
+    </div>
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-shield-heart"></i>
+
+        <h4>100% Genuine</h4>
+
+        <p>Authentic healthcare products.</p>
+
+    </div>
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h4>24×7 Support</h4>
+
+        <p>We're always here to help.</p>
+
+    </div>
+
+</section>
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h3>Opnora Medical</h3>
+
+            </div>
+
+            <p>
+
+                Your trusted destination for genuine medicines,
+                healthcare products and wellness support.
+
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Customer Area</h4>
+
+            <ul>
+
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Information</h4>
+
+            <ul>
+
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="contact.html">Support</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Opnora Medical Store. All rights reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ===========================
+FLOATING BUTTONS
+=========================== -->
+
+<a href="https://wa.me/919999999999"
+class="whatsapp-float"
+target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+919999999999"
+class="call-float">
+
+    <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
