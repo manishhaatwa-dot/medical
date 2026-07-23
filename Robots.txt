@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medical.opnora.com/sitemap.xml
